@@ -3,8 +3,12 @@ class InputBox extends Component {
   constructor(props)
   {
     super(props);
-    this.state = { Data:"",type:"",value1:"",onChange:""}
-    this.state={username:"", password:""}
+    this.state = { Data:"",
+                  type:"",
+                  value1:"",
+                  onChange:"",
+                  username:"",
+                  password:""};
     this.handleUserChange=this.handleUserChange.bind(this);
     this.handlePasswordChange=this.handlePasswordChange.bind(this);
     this.handleonChange=this.handleonChange.bind(this);

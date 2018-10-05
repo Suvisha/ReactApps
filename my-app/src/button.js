@@ -18,25 +18,24 @@ class Button extends React.Component
     {
       this.setState({ showModal: false });
     }
-    handleLogin(e)
-  {
-    console.log("UserName: " + e.props.username);
-    console.log("Password: " + e.props.password);
-    if(this.props.username==="Admin"&&this.props.password==="Admin123")
-    {
-      console.log("correct");
-      alert(this.state.username+"Logged In")
-    }
-    else
-    {
-      console.log("Invaild User");
-    }
+    handleLogin()
+   {
+    console.log("UserName: " + this.props.username);
+    // if(this.props.InputBox.username==="Admin"&&this.props.password==="Admin123")
+    // {
+    //   console.log("correct");
+    //   alert(this.state.username+"Logged In")
+    // }
+    // else
+    // {
+    //   console.log("Invaild User");
+    // }
   }
     render()
     {
       return(
           <div>
-            <button type="submit" onClick={this.handleLogin} className="buttonProp" > {this.props.name} </button>
+            <button type="submit" onClick={this.handleOpenModal} className="buttonProp" > {this.props.name} </button>
             {/* <PrintProvider>
               <button type="submit" onClick={this.handleOpenModal} className="buttonProp" > {this.props.name} </button>
               <Modal isOpen={this.state.showModal}>
