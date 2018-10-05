@@ -1,0 +1,8 @@
+{
+  "name": "",
+  "version": "",
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "react": "^16.4.2"
+  }
+}
